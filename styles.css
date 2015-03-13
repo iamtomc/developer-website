@@ -1,0 +1,120 @@
+body {
+  font-family: 'Raleway', serif !important;
+}
+
+.navBanner {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  float: left;
+}
+
+.menu-navigation {
+  margin-top: 50px;
+}
+
+/*menu below*/
+#hamburger-menu span, #hamburger-menu span:before, #hamburger-menu span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #000;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 500ms ease-in-out;
+}
+
+#hamburger-menu.active span {
+  background-color: transparent;
+}
+
+#hamburger-menu.active span:before, #hamburger-menu.active span:after {
+  top: 0;
+}
+
+#hamburger-menu span:before {
+  top: -10px;
+}
+
+#hamburger-menu span:after {
+  bottom: -10px;
+}
+
+#hamburger-menu.active span:before {
+  transform: rotate(45deg);
+}
+
+#hamburger-menu.active span:after {
+  transform: rotate(-45deg);
+}
+
+/*end of menu*/
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+.topBanner {
+  min-height: 800px;
+  float: left;
+  width: 100%;
+  color: #232323;
+}
+.topBanner .container {
+  margin-top: 50px;
+}
+.topBanner h3 {
+  font-size: 4em;
+  text-align: center;
+  padding-top: 100px;
+}
+.topBanner h4 {
+  font-size: 4em;
+  padding-top: 50px;
+  text-align: center;
+}
+.topBanner p {
+  font-size: 2.75em;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.row .myCarouselRow {
+  width: 100%;
+}
+
+.secondBanner {
+  width: 100%;
+}
+.secondBanner .col-md-4 h3 {
+  text-align: center;
+}
+.secondBanner .col-md-4 p {
+  text-align: center;
+}
+.secondBanner .circle {
+  border-radius: 50%;
+  background-color: red;
+  display: block;
+  padding: 10px 0;
+  margin: 0 auto;
+  height: 140px;
+  width: 140px;
+}
+
+.thirdBanner {
+  background-color: #EBEBEB;
+}
+.thirdBanner h3 {
+  color: blue;
+  text-align: center;
+}
+
+.footerBanner {
+  background-color: red;
+}
+
+.mainImage {
+  width: 100%;
+}
