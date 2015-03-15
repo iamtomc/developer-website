@@ -19,11 +19,16 @@ body {
 	text-decoration: none;
 	position: fixed;
 	top: 20px;
-	right: 0px;
+	//right: 0px;
 	bottom: 0px;
 	left: 20px;
 	z-index: 1;
 	transition: (all 1.0s ease-in-out);
+}
+
+.menuText{
+	display: block;
+	float: left;
 }
 
 .sidebar {
