@@ -1,4 +1,4 @@
-document.querySelector( "#hamburger-menu" )
+document.querySelector( "#hamburger-menu")
   .addEventListener( "click", function() {
     this.classList.toggle( "active" );
     $('.sidebar').css({'width': '200px'});
