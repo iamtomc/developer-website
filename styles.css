@@ -18,7 +18,7 @@ body {
   bottom: 0px;
   left: 20px;
   z-index: 1;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .Texttoggle {
@@ -29,7 +29,7 @@ body {
   bottom: 0px;
   left: 70px;
   z-index: 1;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .CloseToggle {
@@ -41,7 +41,7 @@ body {
   bottom: 0px;
   left: 70px;
   z-index: 1;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .sidebar {
@@ -55,7 +55,7 @@ body {
   background: #333;
   z-index: 0;
   opacity: 0.85;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .sidebar li {
   color: rgba(255, 255, 255, 0.8);
@@ -86,7 +86,7 @@ body {
   left: 255px;
   opacity: 1;
 }
-#sidebartoggler:checked + .page-wrap .topBanner, #sidebartoggler:checked + .page-wrap .secondBanner, #sidebartoggler:checked + .page-wrap .thirdBanner {
+#sidebartoggler:checked + .page-wrap .topBanner, #sidebartoggler:checked + .page-wrap .secondBanner, #sidebartoggler:checked + .page-wrap .secondBannerCenter, #sidebartoggler:checked + .page-wrap .thirdBanner {
   padding-left: 300px;
 }
 
@@ -139,62 +139,60 @@ body {
   transform: rotate(-45deg);
 }
 
-/*end of menu*/
 .navbar {
   margin-bottom: 0 !important;
 }
 
 .topBanner {
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   min-height: 800px;
   float: left;
   width: 100%;
-  color: #232323;
 }
 .topBanner .container {
   margin-top: 50px;
 }
 .topBanner h3 {
-  font-size: 4em;
+  font-size: 5em;
   text-align: center;
-  padding-top: 100px;
-  -webkit-animation: fadein 4s;
+  padding-top: 140px;
+  -webkit-animation: fadein 5s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s;
+  -moz-animation: fadein 5s;
   /* Firefox < 16 */
-  -ms-animation: fadein 4s;
+  -ms-animation: fadein 5s;
   /* Internet Explorer */
-  -o-animation: fadein 4s;
+  -o-animation: fadein 5s;
   /* Opera < 12.1 */
-  animation: fadein 4s;
+  animation: fadein 5s;
 }
 .topBanner h4 {
   font-size: 4em;
   padding-top: 50px;
   text-align: center;
-  -webkit-animation: fadein 4s;
+  -webkit-animation: fadein 5s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s;
+  -moz-animation: fadein 5s;
   /* Firefox < 16 */
-  -ms-animation: fadein 4s;
+  -ms-animation: fadein 5s;
   /* Internet Explorer */
-  -o-animation: fadein 4s;
+  -o-animation: fadein 5s;
   /* Opera < 12.1 */
-  animation: fadein 4s;
+  animation: fadein 5s;
 }
 .topBanner p {
   font-size: 2.75em;
   padding-top: 50px;
   text-align: center;
-  -webkit-animation: fadein 4s;
+  -webkit-animation: fadein 5s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s;
+  -moz-animation: fadein 5s;
   /* Firefox < 16 */
-  -ms-animation: fadein 4s;
+  -ms-animation: fadein 5s;
   /* Internet Explorer */
-  -o-animation: fadein 4s;
+  -o-animation: fadein 5s;
   /* Opera < 12.1 */
-  animation: fadein 4s;
+  animation: fadein 5s;
 }
 
 @keyframes fadein {
@@ -255,17 +253,21 @@ body {
   width: 100%;
 }
 
-.secondBanner {
-  transition: all 1s ease-in-out;
+.secondBanner, .secondBannerCenter {
+  background-color: #EBEBEB;
+  float: left;
+  border-top: #ebebeb 1px solid;
+  transition: all 0.5s ease-in-out;
   width: 100%;
+  height: 300px;
 }
-.secondBanner .col-md-4 h3 {
+.secondBanner .col-md-4 h3, .secondBannerCenter .col-md-4 h3 {
   text-align: center;
 }
-.secondBanner .col-md-4 p {
+.secondBanner .col-md-4 p, .secondBannerCenter .col-md-4 p {
   text-align: center;
 }
-.secondBanner .circle {
+.secondBanner .circle, .secondBannerCenter .circle {
   border-radius: 50%;
   background-color: red;
   display: block;
@@ -275,9 +277,23 @@ body {
   width: 140px;
 }
 
+.secondBannerCenter {
+  margin-bottom: 30px;
+}
+.secondBannerCenter h3 {
+  font-size: 3em;
+  padding-top: 85px;
+  text-align: center;
+}
+.secondBannerCenter p {
+  text-align: center;
+}
+
 .thirdBanner {
-  background-color: #EBEBEB;
-  transition: all 1s ease-in-out;
+  border-top: 1px solid blue;
+  float: left;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
 }
 .thirdBanner h3 {
   color: blue;
@@ -285,9 +301,34 @@ body {
 }
 
 .footerBanner {
-  background-color: red;
+  background-color: #2A3543;
+  color: white;
+  height: 300px;
+  font-family: 'Raleway', serif !important;
+  float: left;
+  width: 100%;
+}
+.footerBanner p {
+  font-family: 'Raleway', serif !important;
+  font-size: 2em;
+  padding-top: 150px;
 }
 
 .mainImage {
   width: 100%;
+}
+
+@media screen and (max-width: 810px) {
+  .Texttoggle {
+    display: none;
+  }
+
+  #sidebartoggler {
+    display: none;
+  }
+  #sidebartoggler:checked + .page-wrap .CloseToggle {
+    left: 255px;
+    opacity: 0;
+    display: none;
+  }
 }
