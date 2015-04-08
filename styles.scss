@@ -78,6 +78,15 @@ body {
 		&:hover{
 			color: rgba(255,255,255,1);
 		}
+
+		a {
+			color: rgba(255, 255, 255, 0.8);
+			text-decoration: none;
+
+			&:hover{
+			color: rgba(255,255,255,1);
+		}
+		}
 	}
 }
 
@@ -208,8 +217,7 @@ body {
 			font-size: 5em;
 			text-align: center;
 			padding-top: 140px;
-			 // -webkit-transition-delay: 0.5s; /* Safari */
-    // 		transition-delay: 0.5s;
+
    			-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        		-moz-animation: fadein 5s; /* Firefox < 16 */
        		-ms-animation: fadein 5s; /* Internet Explorer */
@@ -223,8 +231,7 @@ body {
 			font-size: 4em;
 			padding-top: 50px;
 			text-align: center;
-			 // -webkit-transition-delay: 0.5s; /* Safari */
-    // 		transition-delay: 0.5s;
+
 			-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        		-moz-animation: fadein 5s; /* Firefox < 16 */
        		-ms-animation: fadein 5s; /* Internet Explorer */
@@ -238,14 +245,31 @@ body {
 			font-size: 2.75em;
 			padding-top: 50px;
 			text-align: center;
-			 // -webkit-transition-delay: 0.5s; /* Safari */
-    // 		transition-delay: 0.5s;
 			-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        		-moz-animation: fadein 5s; /* Firefox < 16 */
        		-ms-animation: fadein 5s; /* Internet Explorer */
          	-o-animation: fadein 5s; /* Opera < 12.1 */
             animation: fadein 5s;
 		}
+
+		.aboutCol {
+
+			padding-bottom: 300px;
+
+			h3 {
+				text-align: left;
+			}
+
+			.about {
+				font-size: 2.5em;
+				padding-top: 50px;
+				text-align: left;
+			}
+
+
+		}
+
+
 }
 
 @keyframes fadein {
@@ -282,12 +306,12 @@ body {
 }
 
 .secondBanner, .secondBannerCenter {
-	background-color: #EBEBEB;
+	//background-color: #EBEBEB;
 	float: left;
-	border-top: #ebebeb 1px solid;
+	//border-top: #ebebeb 1px solid;
 	transition: (all 0.5s ease-in-out);
 	width: 100%;
-	height: 300px;
+	height: 400px;
 
 	.col-md-4 h3{
 		text-align: center;
@@ -320,9 +344,27 @@ body {
 		text-align: center;
 	}
 
+	h4 {
+		padding-top: 45px;
+		font-size: 2.2em;
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
 	p {
+		font-size: 1.5em;
 		text-align: center;
 	}
+
+	.currentskillsHeader {
+		font-size: 3.5em;
+		padding-top: 5px;
+	}
+
+	.skillDiv, .firstFade, .secondFade, .thirdFade, .fourthFade {
+		display: none;
+	}
+
 }
 
 .thirdBanner{

@@ -68,6 +68,13 @@ body {
 .sidebar li:hover {
   color: white;
 }
+.sidebar li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.sidebar li a:hover {
+  color: white;
+}
 
 #sidebartoggler {
   display: none;
@@ -194,6 +201,17 @@ body {
   /* Opera < 12.1 */
   animation: fadein 5s;
 }
+.topBanner .aboutCol {
+  padding-bottom: 300px;
+}
+.topBanner .aboutCol h3 {
+  text-align: left;
+}
+.topBanner .aboutCol .about {
+  font-size: 2.5em;
+  padding-top: 50px;
+  text-align: left;
+}
 
 @keyframes fadein {
   from {
@@ -254,12 +272,10 @@ body {
 }
 
 .secondBanner, .secondBannerCenter {
-  background-color: #EBEBEB;
   float: left;
-  border-top: #ebebeb 1px solid;
   transition: all 0.5s ease-in-out;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 .secondBanner .col-md-4 h3, .secondBannerCenter .col-md-4 h3 {
   text-align: center;
@@ -285,8 +301,22 @@ body {
   padding-top: 85px;
   text-align: center;
 }
-.secondBannerCenter p {
+.secondBannerCenter h4 {
+  padding-top: 45px;
+  font-size: 2.2em;
   text-align: center;
+  padding-bottom: 15px;
+}
+.secondBannerCenter p {
+  font-size: 1.5em;
+  text-align: center;
+}
+.secondBannerCenter .currentskillsHeader {
+  font-size: 3.5em;
+  padding-top: 5px;
+}
+.secondBannerCenter .skillDiv, .secondBannerCenter .firstFade, .secondBannerCenter .secondFade, .secondBannerCenter .thirdFade, .secondBannerCenter .fourthFade {
+  display: none;
 }
 
 .thirdBanner {
