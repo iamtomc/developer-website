@@ -296,6 +296,9 @@ body {
 .secondBannerCenter {
   margin-bottom: 30px;
 }
+.secondBannerCenter .container {
+  opacity: 0;
+}
 .secondBannerCenter h3 {
   font-size: 3em;
   text-align: center;

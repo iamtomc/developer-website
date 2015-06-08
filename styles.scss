@@ -323,7 +323,6 @@ body {
 	}
 
 	.circle{
-
 		border-radius: 50%;
 		background-color: red;
 		display: block;
@@ -335,6 +334,10 @@ body {
 }
 
 .secondBannerCenter{
+
+	.container {
+		opacity: 0;
+	}
 
 	margin-bottom: 30px;
 
